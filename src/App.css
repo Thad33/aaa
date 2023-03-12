@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.App {
+}
+.Navbar {
+  background-color: rgb(223, 138, 47);
+  color: white;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 90px 0 50px;
+}
+a {
+  text-decoration: none;
+  color: rgb(1, 8, 15);
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+  
+}
+.right a{
+  color: aliceblue;
+}
+.productsLayout {
+  display: grid;
+  grid-template-columns: 200px 1000px;
+  padding: 20px 20px 20px 10px;
+}
+.categories {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+}
+.category {
+  text-transform: capitalize;
+  color: rgb(1, 1, 15);
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.category:hover {
+  background-color: rgb(1, 1, 15);
+  color: white;
+}
+.productsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+}
+.product {
+  background-color: rgb(247, 249, 250);
+}
+.pImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.pImg img {
+  width: 90%;
+  height: 250px;
+  border-radius: 2px;
+}
+.pDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price{
+  font-weight: 500;
+  padding: 5px;
+}
+.seeMore {
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(137, 138, 139);
+  font-size: 0.8rem;
+}
+.addtoCartBtn {
+  background-color: rgb(223, 138, 47);
+  color: white;
+  padding: 7px;
+  width: 100%;
+  border-style: none;
+  cursor: pointer;
+}
+.productCard {
+  display: flex;
+  width: 90%;
+  background-color: aliceblue;
+  gap: 10px;
+  margin: auto;
+}
+.oneProductImg img {
+  width: 90%;
+}
+.oneProductDetails {
+  display: flex;
+  flex-direction: column;
+}
+.oneProductDetails .pTitle {
+  color: rgb(1, 1, 15);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 4;
+}
+.pDesc {
+  letter-spacing: 2px;
+}
+.priceDetails {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.pPrice {
+  color: rgb(1, 1, 15);
+  font-weight: 500;
+
+}
+.addItemToCart{
+  margin-top: 20px;
+  padding: 10px;
+background-color: rgb(223, 138, 47);
+width: 120px;
+cursor: pointer;
+color: aliceblue;
+}
